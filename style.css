@@ -46,15 +46,40 @@ a{color:inherit}
   text-decoration: none;
 }
 
+/* Переливающаяся градиентная плашка */
 .ai-bot-note {
   cursor: pointer;
-  transition: all 0.2s ease;
+  font-weight: 800;
+  color: #04163d; /* Тёмный текст для максимального контраста */
+  border: none;
+  
+  /* Плавный градиент из цветов сайта: салатовый ➔ мятный ➔ голубой ➔ салатовый */
+  background: linear-gradient(135deg, var(--lime), var(--mint), var(--cyan), var(--lime));
+  background-size: 300% 300%;
+  
+  /* Запуск бесконечной анимации перелива */
+  animation: gradientShift 3s ease infinite;
+  box-shadow: 0 0 12px rgba(24, 224, 168, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Эффект наведения */
 .ai-bot-note:hover {
-  border-color: var(--cyan);
-  color: #ffffff;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(25, 211, 255, 0.7);
+}
+
+/* Анимация смещения градиента */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1{margin:0 0 20px;font-size:clamp(32px,5vw,58px);line-height:1.08;font-weight:800;letter-spacing:-.02em}
