@@ -1,7 +1,7 @@
 // ===== Настройки: меняются здесь =====
 const CONFIG = {
   brand: "Pocket Option",                                   // название сайта
-  refLink: "https://pocket-friends.co/r/xte1qtcfbf"     // реферальная ссылка клиента
+  refLink: "https://surl.li/jbclhw"     // реферальная ссылка клиента
 };
 
 document.querySelectorAll("[data-brand]").forEach(el => el.textContent = CONFIG.brand);
