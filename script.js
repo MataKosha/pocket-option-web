@@ -1,7 +1,7 @@
 // ===== Настройки: меняются здесь =====
 const CONFIG = {
   brand: "Pocket Option",                                   // название сайта
-  refLink: "https://surl.li/jbclhw"     // реферальная ссылка клиента
+  refLink: "https://u3.shortink.io/login?social=Google&utm_campaign=869330&utm_source=affiliate&utm_medium=sr&a=ll42uJOj45hlWG&al=1804873&ac=googl&cid=986843&code=WELCOME50"     // реферальная ссылка клиента
 };
 
 document.querySelectorAll("[data-brand]").forEach(el => el.textContent = CONFIG.brand);
