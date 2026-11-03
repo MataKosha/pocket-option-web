@@ -1,6 +1,6 @@
 // ===== Настройки: меняются здесь =====
 const CONFIG = {
-  brand: "Pocket Option",                                   // название сайта
+  brand: "Trade Pulse",                                   // название сайта
   refLink: "https://u3.shortink.io/login?social=Google&utm_campaign=869330&utm_source=affiliate&utm_medium=sr&a=ll42uJOj45hlWG&al=1804873&ac=googl&cid=986843&code=WELCOME50"     // реферальная ссылка клиента
 };
 
